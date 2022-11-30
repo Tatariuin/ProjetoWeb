@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estiloLogin.css">
+</head>
+<body>
+    <div id="corpo">
+        <div id="cab">
+            <button id="modoVisualiza" onclick="chama()">Modo claro</button>
+            <a href="../Index.html"><img src="../img/logo.png" alt="" id="logo"></a>
+            <h1 id="titulo">Cross Mangás</h1>
+            <div id="menu">
+                <a href="#">Mangás</a>
+                <a href="#">Lançamentos</a>
+                <a href="#">Sobre nós</a>
+                <a href="#">Login</a>
+                
+            </div>
+            
+
+        </div>
+        
+            <form action="adasfa" method="post" id="formulario" onsubmit="return testaCamposLogin()">
+                <h2>Fazer login</h2>
+                <input type="text" name="nome" placeholder="Nome de usuário" id="nome">
+                <input type="password" name="senha" id="senha" placeholder="Senha">
+                <button type="submit">Acessar</button><br>
+
+                <span id="msgErro"></span>
+
+                <a href="Cadastro.html">Me registrar</a>
+
+               
+            </form>
+            
+    </div>
+    <script src="../js/comportamento.js"></script>
+</body>
+</html>
