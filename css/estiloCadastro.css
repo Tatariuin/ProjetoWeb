@@ -19,12 +19,13 @@
     float: left;
 }
 #titulo{
-    float: right;
-    margin-right: 250px;
+    margin-top: 30px;
+    margin-right: 120px;
     font-size: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: LightBlue;
     height: 20px;
+   float: right;
 }
 #menu{
     width: 900px;
@@ -51,18 +52,16 @@
 #modoVisualiza:hover{
     background-color: black;
 }
-#formulario{
-    float: right;
-    margin-top: 20px;
-    margin-right: 346px;
-}
+
 input{
-    width: 300px;
+    width: 350px;
     height: 25px;
     margin-left: 25px;
-    
+    border-radius: 15px;
+    border-radius: 15px;
 }
 label{
+    
     font-size: 18px;
     margin-left: 30px;
     margin-top: 10px;
@@ -70,10 +69,21 @@ label{
 form{
     background-color: PowderBlue;
    border-radius: 15px;
-   height: 300px;
-   width: 350px;
+   height: 350px;
+   width: 400px;
+   float: right;
+   margin-top: 20px;
+   margin-right: 346px;
 }
 h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #A020F0;
+}
+form button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 40px;
+    width: 130px;
+    margin-left: 130px;
+    margin-top: 10px;
+    border-radius: 20px;
 }
