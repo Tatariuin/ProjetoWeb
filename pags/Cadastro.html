@@ -25,7 +25,7 @@
         </div>
        
             
-            <form action="tantoFaz" id="formulario">
+            <form action="#" id="formulario" onsubmit=" return testaCamposCadastro()">
                 <h2>Cadastrar-me</h2>
                 <label for="nome">Nome de usuário</label><br>
                 <input type="text" id="nome" name="nome"><br>
@@ -35,7 +35,8 @@
                 <input type="password" name="senha" id="senha"><br>
                 <label for="repeteSenha">Insira a senha novamente</label><br>
                 <input type="password" id="repeteSenha" name="repeteSenha">
-                <button type="submit">Cadastrar</button>
+                <button type="submit">Cadastrar</button><br>
+                <p id="msgErro"></p>
             </form>
         
     </div>

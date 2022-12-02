@@ -62,3 +62,49 @@ function testaCamposLogin(){
    
 
 }
+function testaCamposCadastro(){
+    var nome = document.getElementById("nome");
+    var email = document.getElementById("email");
+    var senha = document.getElementById("senha")
+    var repSenha = document.getElementById("repeteSenha")
+    var msg = document.getElementById("msgErro")
+    msg.style.color = "red"
+    if(nome.value == ""){
+       nome.focus()
+       nome.style.backgroundColor = "rgb(228, 123, 123)"
+        msg.innerHTML = "Campo de nome não preenchido"
+        msg.style.textAlign = "center"
+        return false
+    }
+    if(email.value == ""){
+        email.focus()
+        email.style.backgroundColor = "rgb(228, 123, 123)"
+         msg.innerHTML = "Campo de E-mail não preenchido"
+         msg.style.textAlign = "center"
+         return false
+    }
+    if(senha.value == ""){
+        senha.focus()
+        senha.style.backgroundColor = "rgb(228, 123, 123)"
+         msg.innerHTML = "Campo de senha não preenchido"
+         msg.style.textAlign = "center"
+         return false
+    }
+    if(repSenha.value == ""){
+        repSenha.focus()
+        repSenha.style.backgroundColor = "rgb(228, 123, 123)"
+         msg.innerHTML = "Campo de repetir senha não preenchido"
+         msg.style.textAlign = "center"
+         return false
+    }
+    if(repSenha.value != senha.value){
+        repSenha.focus()
+        repSenha.style.backgroundColor = "rgb(228, 123, 123)"
+         msg.innerHTML = "Senha não correspondente <br> Por favor repita a senha corretamente"
+         msg.style.textAlign = "center"
+         return false
+    }
+    
+    
+    return true
+}

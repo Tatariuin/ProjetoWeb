@@ -69,7 +69,7 @@ label{
 form{
     background-color: PowderBlue;
    border-radius: 15px;
-   height: 350px;
+   height:min-content 350px;
    width: 400px;
    float: right;
    margin-top: 20px;
@@ -78,6 +78,7 @@ form{
 h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #A020F0;
+   
 }
 form button{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
