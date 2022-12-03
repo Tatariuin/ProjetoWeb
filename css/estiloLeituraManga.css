@@ -1,0 +1,151 @@
+#corpo{
+    
+    width: 1000px;
+   
+    margin: 0 auto;
+}
+#cab{
+    background-color:DodgerBlue;
+    width: 100%;
+    height: 150px;
+    float: right;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+#logo{
+    height: 110px;
+    width: 200px;
+    float: left;
+}
+#titulo{
+    margin-top: 30px;
+    margin-right: 120px;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: LightBlue;
+    height: 20px;
+   float: right;
+}
+#menu{
+    width: 900px;
+    height: 40px;
+    float: right;
+    margin-right: 40px;
+}
+#menu a{
+    margin-left: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(201, 188, 195);
+}
+#menu a:hover{
+    color: #A020F0
+}
+#modoVisualiza{
+    border-radius: 15px;
+    float: right;
+    background-color: aliceblue;
+    color: #A020F0;
+}
+#modoVisualiza:hover{
+    background-color: black;
+}
+#conteudo{
+    width: 100%;
+    background-color: PowderBlue;
+    float: right;
+}
+#infoManga{
+    float: right;
+    width: 960px;
+    margin-top: 20px;
+    padding: 20px;
+    border-top: solid black;
+    border-bottom: solid black;
+}
+h1{
+    color: #A020F0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#imgManga{
+    width: 300px;
+    height: 100%;
+    float: left;
+}
+#imgManga img{
+    width: 100%;
+    height: 100%;
+}
+#textoManga{
+    width: 600px;
+    float: left;
+    margin-left: 50px;
+}
+#textoManga h1{
+    float: left;
+    margin-left: 10px;
+} 
+#aumenta{
+    float: right;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-image: url(../img/imgsButtons/adicionar-botao-circular-com-contorno.png);
+    background-size:contain;
+    
+    width: 30px;
+    height: 30px;
+}
+#aumenta:hover{
+    background-color: green;
+}
+#diminui{
+    float: right;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-image: url(../img/imgsButtons/botao-circular-negativo.png);
+    background-size:contain;
+    width: 30px;
+    height: 30px;
+}
+#diminui:hover{
+    background-color: red;
+}
+#caracteristicas{
+    width: 580px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    float: left;
+}
+#caracteristicas p{
+    font-weight: bolder;
+}
+#caracteristicas span{
+    font-weight: normal;
+}
+#caracteristicas+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+}
+#caracteristicas+p span{
+    font-weight: bolder;
+}
+#capitulos{
+    float: right;
+    width: 960px;
+    padding: 20px;
+     
+}
+#rod{
+    width: 100%;
+    height: 150px;
+    background-color:DodgerBlue;
+    float: right;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}

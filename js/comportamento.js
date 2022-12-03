@@ -12,6 +12,12 @@ function chama(){
 function modoEscuro(){
     menu = document.getElementById("cab");
     conteudo = document.getElementById("conteudo");
+    p = document.getElementsByTagName("p")
+    h1 = document.getElementsByTagName("h1")
+    h2 = document.getElementsByTagName("h2")
+    rod = document.getElementById("rod")
+    rod.style.backgroundColor = "black"
+
     if(conteudo != null){
         conteudo.style.backgroundColor = "#4F4F4F"
     }
@@ -25,10 +31,34 @@ function modoEscuro(){
     if(formulario != null){
         formulario.style.backgroundColor = "#C0C0C0"
     }
+   
+    if(p != null){
+        for(var i = 0;i < p.length;i++){
+            p[i].style.color = "white"
+        }
+    }
+    if(h1 != null){
+        for(var i = 0;i < h1.length;i++){
+            h1[i].style.color = "white"
+        }
+    }
+    if(h2 != null){
+        for(var i = 0;i < h2.length;i++){
+            h2[i].style.color = "white"
+        }
+        
+    }
 }
 function modoClaro(){
     menu = document.getElementById("cab");
     conteudo = document.getElementById("conteudo");
+    p = document.getElementsByTagName("p")
+    h1 = document.getElementsByTagName("h1")
+    h2 = document.getElementsByTagName("h2")
+    h1Unico = document.getElementById("titulo")
+    tituloForm = document.getElementById("tituloForm")
+    rod = document.getElementById("rod")
+    rod.style.backgroundColor = "DodgerBlue"
     if(conteudo != null){
         conteudo.style.backgroundColor = "PowderBlue"
     }
@@ -41,6 +71,27 @@ function modoClaro(){
     formulario = document.getElementById("formulario")
     if(formulario != null){
         formulario.style.backgroundColor = "PowderBlue"
+    }
+    
+    if(p != null){
+        for(var i = 0;i < p.length;i++){
+            p[i].style.color = "black"
+        }
+    }
+
+    if(h1 != null){
+        for(var i = 0;i < h1.length;i++){
+            h1[i].style.color = "#A020F0"
+        }
+    }
+    if(h2 != null){
+        for(var i = 0;i < h2.length;i++){
+            h2[i].style.color = "black"
+        }
+    }
+    h1Unico.style.color = "LightBlue"
+    if(tituloForm != null){
+        tituloForm.style.color = "#A020F0"
     }
 }
 function testaCamposLogin(){
@@ -108,3 +159,4 @@ function testaCamposCadastro(){
     
     return true
 }
+
