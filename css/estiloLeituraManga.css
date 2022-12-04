@@ -153,3 +153,9 @@ h1{
     border-bottom-right-radius: 20px;
     text-align: center;
 }
+#imgsLeitorManga{
+    width: 680px;
+    margin: 0 auto;
+    padding: 10px;
+    
+}
