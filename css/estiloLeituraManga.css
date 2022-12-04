@@ -120,9 +120,12 @@ h1{
 }
 #caracteristicas p{
     font-weight: bolder;
+    font-size: 16px;
+
 }
 #caracteristicas span{
     font-weight: normal;
+    font-size: 16px;
 }
 #caracteristicas+p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -130,6 +133,7 @@ h1{
     margin-left: 10px;
     margin-right: 10px;
     text-align: justify;
+    font-size: 16px;
 }
 #caracteristicas+p span{
     font-weight: bolder;

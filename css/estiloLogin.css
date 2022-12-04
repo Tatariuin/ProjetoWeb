@@ -99,3 +99,12 @@ a{
 a:hover{
     color: #A020F0;
 }
+#rod{
+    width: 100%;
+    height: 150px;
+    background-color:DodgerBlue;
+    float: right;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}

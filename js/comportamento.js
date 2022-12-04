@@ -86,7 +86,7 @@ function modoClaro(){
     }
     if(h2 != null){
         for(var i = 0;i < h2.length;i++){
-            h2[i].style.color = "black"
+            h2[i].style.color = "#A020F0"
         }
     }
     h1Unico.style.color = "LightBlue"
