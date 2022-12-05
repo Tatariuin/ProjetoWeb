@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/estiloMangas.css">
 </head>
-<body>
+<body onload="tipoPagina()">
     <div id="corpo">
         <div id="cab">
             <button id="modoVisualiza" onclick="chama()">Modo escuro</button>
@@ -23,16 +23,23 @@
         </div>
 
         <div id="conteudo">
+            <select name="" id="ModoDeLeitura" onclick="tipoPagina()">
+                <option  disabled selected value="cascate">Modo de leitura</option>
+                <option  value="casc">Cascata</option>
+                <option value="pag">Paginação</option>
+            </select>
             <h1 id="TituloManga">Origin Capitulo 84</h1>
+            <p id="numPag"></p>
             <div id="imgsLeitorManga">
 
             </div>
         </div>
+        <div id="rod">
+            <h1>Rogerio Palafoz | 29-11-2022</h1>
+        </div>
 
     </div>
-    <div id="rod">
-        <h1>Rogerio Palafoz | 29-11-2022</h1>
-    </div>
+    
     <script src="../js/comportamento.js"></script>
     <script src="../js/scriptAssButtons.js"></script>
 </body>
