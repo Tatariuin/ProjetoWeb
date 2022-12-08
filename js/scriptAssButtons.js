@@ -6,7 +6,7 @@ function tipoPagina(){
         for(var i = 1;i <= 15;i++){
 
             
-            leitorManga.innerHTML += "<img src='../img/MangaOrigin/"+i+"-o.jpg' style='margin:0 auto;width:100%'>"
+            leitorManga.innerHTML += "<img src='../img/MangaOrigin/"+i+"-o.jpg' id='pagsManga'>"
             }
     }
     else{
@@ -14,7 +14,7 @@ function tipoPagina(){
         leitorManga.innerHTML = ""
         
         if(capManga <= 15){
-            leitorManga.innerHTML = "<img src='../img/MangaOrigin/"+capManga+"-o.jpg' style='margin:0 auto;width:100%'>"
+            leitorManga.innerHTML = "<img src='../img/MangaOrigin/"+capManga+"-o.jpg' id='pagsManga'>"
         }
         leitorManga.innerHTML += "<div style='margin-left:300px;width: 100px;background-color:red'><button style='background-size:contain;margin-left: 5px;background-image: url(../img/imgsButtons/esquerda.png);border-radius:100%;width: 40px;height:40px;float:left;'onclick='AnteriorPag()'></button><button style='background-image: url(../img/imgsButtons/direita.png);border-radius:100%;width: 40px;height:40px;float:right;margin-right: 5px;background-size:contain;' onclick='ProximaPag()'></button></div>"
         numPag.innerHTML = "Página atual: "+capManga

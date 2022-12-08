@@ -1,0 +1,69 @@
+#corpo{
+    
+    width: 1000px;
+   
+    margin: 0 auto;
+}
+#cab{
+    background-color:DodgerBlue;
+    width: 100%;
+    height: 150px;
+    float: right;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+#logo{
+    height: 110px;
+    width: 200px;
+    float: left;
+}
+#titulo{
+    float: right;
+    margin-right: 250px;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: LightBlue;
+    height: 20px;
+    
+}
+#menu{
+    width: 900px;
+    height: 40px;
+    float: right;
+    margin-right: 40px;
+}
+#menu a{
+    margin-left: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(201, 188, 195);
+}
+#menu a:hover{
+    color: #A020F0
+}
+#modoVisualiza{
+    border-radius: 15px;
+    float: right;
+    background-color: aliceblue;
+    color: #A020F0;
+}
+#modoVisualiza:hover{
+    background-color: black;
+}
+#conteudo{
+    width: 100%;
+    
+    background-color: PowderBlue;
+    float: right;
+}
+#rod{
+    width: 100%;
+    height: 150px;
+    background-color:DodgerBlue;
+    float: right;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}

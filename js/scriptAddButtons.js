@@ -5,7 +5,7 @@ var defineTamanho = 16
 
 function addButtons(){
     for(var i = 1;i <= 87;i++){
-        cap.innerHTML += "<a href='Mangas.html'><button style='border-radius:15px;margin-top:10px;margin-left:26px;width: 130px;height:35px'>capitulo "+i+"</button></a>"
+        cap.innerHTML += "<a href='Mangas.html'><button class='capButtons'>capitulo "+i+"</button></a>"
         
     }
 }
