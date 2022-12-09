@@ -72,7 +72,7 @@
     border-top: black solid;
     border-bottom: black solid;
     width: 100%;
-    height: 300px;
+    height: min-content 300px;
     float: right;
     border-radius: 20px;
     margin-top: 10px;
@@ -86,7 +86,7 @@
 }
 .textoNoticia{
     width: 520px;
-    height: 260px;
+    height: min-content 260px;
     float: right;
     padding: 20px;
     border-radius: 20px;
@@ -100,5 +100,29 @@
     height: 100%;
     border-radius: 15px;
 }
-
+#aumenta{
+    float: right;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-image: url(../img/imgsButtons/adicionar-botao-circular-com-contorno.png);
+    background-size:contain;
+    
+    width: 30px;
+    height: 30px;
+}
+#aumenta:hover{
+    background-color: green;
+}
+#diminui{
+    float: right;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-image: url(../img/imgsButtons/botao-circular-negativo.png);
+    background-size:contain;
+    width: 30px;
+    height: 30px;
+}
+#diminui:hover{
+    background-color: red;
+}
 
