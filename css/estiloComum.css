@@ -46,11 +46,13 @@
 #modoVisualiza{
     border-radius: 15px;
     float: right;
-    background-color: aliceblue;
-    color: #A020F0;
-}
-#modoVisualiza:hover{
     background-color: black;
+    color: #A020F0;
+    height: 30px;
+    width: 30px;
+    background-image: url(../img/imgsButtons/lua.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 #conteudo{
     width: 100%;

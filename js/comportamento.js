@@ -1,4 +1,9 @@
 var modo = true
+var estouNoBody = false;
+
+function estouNobody(){
+    estouNoBody = true
+}
 
 function chama(){
    if(modo == true){
@@ -10,24 +15,34 @@ function chama(){
 }
 
 function modoEscuro(){
-    menu = document.getElementById("cab");
-    conteudo = document.getElementById("conteudo");
-    p = document.getElementsByTagName("p")
-    h1 = document.getElementsByTagName("h1")
-    h2 = document.getElementsByTagName("h2")
-    rod = document.getElementById("rod")
-    rod.style.backgroundColor = "black"
+    var menu = document.getElementById("cab");
+    var conteudo = document.getElementById("conteudo");
+    var p = document.getElementsByTagName("p")
+    var h1 = document.getElementsByTagName("h1")
+    var h2 = document.getElementsByTagName("h2")
+    var rod = document.getElementById("rod")   
+    var botao = document.getElementById("modoVisualiza")
+    var formulario = document.getElementById("formulario")
 
+    rod.style.backgroundColor = "black"
     if(conteudo != null){
         conteudo.style.backgroundColor = "#4F4F4F"
     }
     menu.style.backgroundColor = "black"
     document.body.style.backgroundColor = "#696969"
-    botao = document.getElementById("modoVisualiza")
-    botao.innerHTML = "Modo claro"
-    botao.style.backgroundColor = "white"
+    
+    
+    if(estouNoBody == false){
+        botao.style.backgroundImage = "url(../img/imgsButtons/sol.png)"
+    }
+    else{
+        botao.style.backgroundImage = "url(img/imgsButtons/sol.png)"
+    }
+
+    botao.style.backgroundSize = "contain"
+    botao.style.backgroundColor = "skyblue"
     modo = false
-    formulario = document.getElementById("formulario")
+    
     if(formulario != null){
         formulario.style.backgroundColor = "#C0C0C0"
     }
@@ -50,25 +65,36 @@ function modoEscuro(){
     }
 }
 function modoClaro(){
-    menu = document.getElementById("cab");
-    conteudo = document.getElementById("conteudo");
-    p = document.getElementsByTagName("p")
-    h1 = document.getElementsByTagName("h1")
-    h2 = document.getElementsByTagName("h2")
-    h1Unico = document.getElementById("titulo")
-    tituloForm = document.getElementById("tituloForm")
-    rod = document.getElementById("rod")
-    rod.style.backgroundColor = "DodgerBlue"
+    var menu = document.getElementById("cab");
+    var conteudo = document.getElementById("conteudo");
+    var p = document.getElementsByTagName("p")
+    var h1 = document.getElementsByTagName("h1")
+    var h2 = document.getElementsByTagName("h2")
+    var h1Unico = document.getElementById("titulo")
+    var tituloForm = document.getElementById("tituloForm")
+    var rod = document.getElementById("rod")
+    var botao = document.getElementById("modoVisualiza")
+    var formulario = document.getElementById("formulario")
+     rod.style.backgroundColor = "DodgerBlue"
+
     if(conteudo != null){
         conteudo.style.backgroundColor = "PowderBlue"
     }
     menu.style.backgroundColor = "DodgerBlue"
     document.body.style.backgroundColor = "white"
-    botao = document.getElementById("modoVisualiza")
-    botao.innerHTML = "Modo escuro"
+    
+
+    if(estouNoBody == false){
+        botao.style.backgroundImage = "url(../img/imgsButtons/lua.png)"
+    }
+    else{
+        botao.style.backgroundImage = "url(img/imgsButtons/lua.png)"
+    }
+
+    botao.style.backgroundSize = "contain"
     botao.style.backgroundColor = "black"
     modo = true
-    formulario = document.getElementById("formulario")
+    
     if(formulario != null){
         formulario.style.backgroundColor = "PowderBlue"
     }

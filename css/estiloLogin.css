@@ -14,6 +14,7 @@ form{
     box-shadow:currentColor 0 0 25px ;
     margin-top: 30px;
     margin-bottom: 30px;
+    
 }
 
 input{
@@ -37,13 +38,13 @@ form button:hover{
     color: white;
     background-color:#A020F0;
 }
-a{
+form a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
     font-weight: bolder;
     margin-left: 150px;
     margin-top: 10px;
 }
-a:hover{
+form a:hover{
     color: #A020F0;
 }
