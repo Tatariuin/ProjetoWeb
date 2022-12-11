@@ -1,0 +1,52 @@
+#conteudo div{
+    float: left;
+    margin-left: 30px;
+}
+#textoTermo{
+    width: 660px;
+    
+    padding: 20px;
+}
+#imgIlustativa{
+    background-color: green;
+    width: 200px;
+    height:  300px;
+    background-image: url(../img/gifs/meninaTopPegavaFDS.gif);
+    background-size: 100% 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+#textoTermo h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #A020F0;
+}
+#textoTermo p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+#aumenta{
+    float: right;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-image: url(../img/imgsButtons/adicionar-botao-circular-com-contorno.png);
+    background-size:contain;
+    
+    width: 30px;
+    height: 30px;
+}
+#aumenta:hover{
+    background-color: green;
+}
+#diminui{
+    float: right;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-image: url(../img/imgsButtons/botao-circular-negativo.png);
+    background-size:contain;
+    width: 30px;
+    height: 30px;
+}
+#diminui:hover{
+    background-color: red;
+}
