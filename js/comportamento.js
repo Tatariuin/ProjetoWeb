@@ -124,14 +124,32 @@ function testaCamposLogin(){
     var nome = document.getElementById("nome");
     var senha = document.getElementById("senha");
     var erro  = document.getElementById("msgErro");
-    erro.style.textAlign = "center"
-    erro.style.marginLeft = "60px"
-    if(nome.value == "" || senha.value == ""){
+    erro.style.marginLeft = "87px";
+    
+    var user = new Object()
+    user.usuario = "Tatariun"
+    user.senha = "teresa"
+    
+    if(nome.value == ""){
 
-       erro.innerHTML = "Erro: Campo nome ou senha não preenchidos";
-       erro.style.color = "red"
+        erro.innerHTML = "Erro: Campo nome não preenchido";
+        erro.style.color = "red";
+        nome.focus();
+        
         return false;
         
+    }
+    if(senha.value == ""){
+        erro.innerHTML = "Erro: Campo senha não preenchido";
+        erro.style.color = "red"
+        senha.focus()
+       
+        return false;
+    }
+    if(nome.value != user.usuario || senha.value != user.senha){
+        erro.innerHTML = "Erro: Nome ou senha incorretos";
+        erro.style.color = "red"
+        return false;
     }
     return true
     
