@@ -5,6 +5,7 @@ numPag = document.getElementById("numPag")
 function tipoPagina(){
     if(b.value == "casc" || b.value == "cascate"){  
         numPag.innerHTML = "";
+        leitorManga.innerHTML = ""
         for(var i = 1;i <= 15;i++){
 
             leitorManga.innerHTML += "<img src='../img/MangaOrigin/"+i+"-o.jpg' class='pagsManga'>"
